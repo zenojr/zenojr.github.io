@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Teste App</title>
+    <link rel="stylesheet" href="icons/material.css">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <div class="topo-fixo z-depth-1">
+        <div class="indigo darken-4 white-text valign-wrapper">
+            <h5 class="titulo">Padaria do Zeno</h5>
+            <div>
+                <i class="material-icons waves-effect waves-light waves-circle dropdown-button" data-activates="submenu" data-gutter="5" data-constrainwidth="false">more_vert</i>
+
+                <ul id="submenu" class="dropdown-content">
+                    <li><a class="black-text acao-limpar">Limpar</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <ul class="tabs indigo darken-4">
+            <li class="tab"><a href="#bolos" class="white-text waves-effect waves-light">Bolos</a></li>
+            <li class="tab"><a href="#bebidas" class="white-text waves-effect waves-light">Bebidas</a></li>
+        </ul>
+    </div>
+    <div id="bolos" class="section">
+        <h6 class="container">Pedaços</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect">Bolo de Cenoura</a>
+            <a class="collection-item waves-effect">Nega Maluca</a>
+            <a class="collection-item waves-effect">Bolo de Nutella</a>
+        </div>
+        <h6 class="container">Inteiro</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect">Bolo de Cenoura</a>
+            <a class="collection-item waves-effect">Nega Maluca</a>
+            <a class="collection-item waves-effect">Bolo de Nutella</a>
+        </div>
+    </div>
+
+    <div id="bebidas" class="section">
+        <h6 class="container">Cafés</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect">Expresso</a>
+            <a class="collection-item waves-effect">Capuccino</a>
+            <a class="collection-item waves-effect">Preto</a>
+        </div>
+        <h6 class="container">Sucos</h6>
+        <div class="collection">
+            <a class="collection-item waves-effect">Suco de Uva</a>
+            <a class="collection-item waves-effect">Suco de Morango</a>
+            <a class="collection-item waves-effect">Suco de Laranja</a>
+        </div>
+    </div>
+    <div class="fixed-action-btn">
+        <a href="#confirmacao" id="confirmar" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">done</i></a>
+    </div>
+
+    <div id="confirmacao" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h5>Resumo do Pedido</h5>
+            <input type="number" id="numero-mesa" class="validate" placeholder="Numero da mesa">
+            <blockquote id="resumo"></blockquote>
+        </div>
+        <div class="modal-footer">
+            <button class="btn deep-orange waves-effect waves-light modal-close acao-limpar">Pedir</button>
+            <button class="btn-flat waves-effect waves-red modal-close">Cancel</button>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
