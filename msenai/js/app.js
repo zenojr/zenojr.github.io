@@ -3,3 +3,7 @@
     $('.modal-trigger').leanModal();
   });
           
+ $(document).ready(function(){
+    $('ul.tabs').tabs("");
+  });
+
