@@ -11,14 +11,26 @@
 body{
 	font-family: Roboto, sans-serif;
 	line-height: 1.4;
+	background-color: #f1791e;
 }
 
 header {
 
 }
 .container{
-	background-color: #f1791e;
+	
 }
+
+.limit{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.box_menu{
+	background-color: white;
+	background-image: url(../IMG/waves_menu.png);
+}
+
 .topo{
 	
 	width: 100%;
@@ -46,7 +58,7 @@ header {
 	height: 150px;
 	position: relative;
 	background-image: url(../IMG/waves_menu.png);
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-color: white;
 	border-bottom: 2px solid rgba(127, 127, 127, 0.5);
 }
@@ -102,9 +114,9 @@ header {
 	.menu-principal {
 		padding: 1em;
 		margin: 0;
-
+		background-color: rgba(0,0,0,0.8);
 		height: 100%;
-		width: 90%;
+		width: 50%;
 		max-width: 320px;
 
 		position: fixed;
@@ -121,8 +133,25 @@ header {
 	.menu-principal li {
 		padding: 1em 0;
 		width: 100%
+
 	}
 }
+
+@media (max-width: 600px) {
+    .menu-ativo:after {
+        content: "";
+        display: block;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background: rgba(0,0,0,0.4);
+    }
+}
+
 
 
 .menu-principal li{
@@ -146,6 +175,17 @@ header {
 	.menu-fechar {
 		display: none;
 	}
+}
+
+.menu-fechar{
+	display: none;
+}
+
+.glyphicon-menu-hamburger {
+	font-size: 1.5em;
+	color: white;
+	float: left;
+	
 }
 
 .texto-centro{
