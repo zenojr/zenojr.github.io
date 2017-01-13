@@ -1,0 +1,38 @@
+.container{
+
+}
+
+.box1{
+	background-color: red;
+	width: 12.5em;
+	height: 12.5em;
+	display: inline-block;
+}
+
+.box2{
+	background-color: blue;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+.box3{
+	background-color: green;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+.box4{
+	background-color: purple;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
+
+.box5{
+	background-color: black;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}
